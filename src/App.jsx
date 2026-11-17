@@ -1,16 +1,22 @@
-import Card from "./Components/Card";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
-      <h1>Student Dashboard</h1>
+    <BrowserRouter>
+      <Navbar />
 
-      <Card name="bathri" dept="CSE" year="2nd Year" />
-
-      <Card name="gokul" dept="IT" year="3rd Year" />
-      
-      <Card name="Ali" dept="ECE" year="1st Year" />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
