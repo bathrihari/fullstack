@@ -1,21 +1,21 @@
 
 .navbar {
-  background: #1e3a8a;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-color: #1e3a8a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #facc15;
+    color: yellow;
 }
